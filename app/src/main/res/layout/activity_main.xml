@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_Background"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/cpc_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo"
+        android:layout_centerInParent="true"
+        android:transitionName="logo"/>
+
+    <TextView
+        android:id="@+id/cpc_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPC"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cpc_logo"
+        android:textSize="45sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="10dp"
+        android:transitionName="logo_text"/>
+    <ImageView
+        android:id="@+id/img_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background_bottom"
+        android:layout_alignParentBottom="true"
+        android:transitionName="img_tree"/>
+</RelativeLayout>
